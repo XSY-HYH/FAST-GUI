@@ -110,7 +110,7 @@ public class PlayerInteractListener implements Listener {
         
         String processedCommand = processCommandVariables(player, command);
         
-        if (executeMode.equalsIgnoreCase("np")) {
+        if (executeMode.equalsIgnoreCase("np") || executeMode.equalsIgnoreCase("player")) {
             // 以玩家身份执行命令
             plugin.getServer().dispatchCommand(player, processedCommand);
         } else {

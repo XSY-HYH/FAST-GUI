@@ -803,6 +803,8 @@ public class NBTManager {
                 namespacedKey = buttonItemCommandKey;
             } else if (key.equals(BUTTON_ITEM_PERMISSION_TAG)) {
                 namespacedKey = buttonItemPermissionKey;
+            } else if (key.equals(BUTTON_ITEM_EXECUTE_MODE_TAG)) {
+                namespacedKey = buttonItemExecuteModeKey;
             } else if (key.equals(NPC_PERMISSION_TAG)) {
                 namespacedKey = npcPermissionKey;
             } else if (key.equals(NPC_EXECUTE_MODE_TAG)) {

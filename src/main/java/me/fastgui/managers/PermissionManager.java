@@ -144,9 +144,11 @@ public class PermissionManager {
         }
         
         // 添加调试日志
-        plugin.getLogger().info("检测到ButtonItem使用，开始权限检查");
-        plugin.getLogger().info("要求权限: " + requiredPermission);
-        plugin.getLogger().info("玩家是否为OP: " + player.isOp());
+        if (plugin.getConfigManager().isDebugModeEnabled()) {
+            plugin.getLogger().info("检测到ButtonItem使用，开始权限检查");
+            plugin.getLogger().info("要求权限: " + requiredPermission);
+            plugin.getLogger().info("玩家是否为OP: " + player.isOp());
+        }
         
         // 检查权限
         boolean hasPermission = true;
@@ -163,7 +165,9 @@ public class PermissionManager {
         }
         // 如果是np或空，所有人都可以使用
         
-        plugin.getLogger().info("权限检查结果: " + (hasPermission ? "通过" : "拒绝"));
+        if (plugin.getConfigManager().isDebugModeEnabled()) {
+            plugin.getLogger().info("权限检查结果: " + (hasPermission ? "通过" : "拒绝"));
+        }
         
         if (plugin.getConfigManager().isDebugModeEnabled()) {
             plugin.getLogger().info("PermissionManager.hasButtonItemPermission: 最终返回: " + hasPermission);

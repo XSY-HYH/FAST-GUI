@@ -151,6 +151,18 @@ public class UIManager {
     }
     
     /**
+     * 添加新UI（兼容旧版本，默认容器类型为CHEST）
+     * @param name UI名称（将直接作为ID使用）
+     * @param contents UI内容（物品数组）
+     * @param worldName 世界名称
+     * @return UI的ID（即清理后的UI名称）
+     * @throws RuntimeException 如果添加UI失败
+     */
+    public String addUI(String name, ItemStack[] contents, String worldName) {
+        return addUI(name, contents, worldName, "CHEST");
+    }
+    
+    /**
      * 添加新UI（支持权限节点）
      * @param name UI名称（将直接作为ID使用）
      * @param contents UI内容（物品数组）
