@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="64" cy="64" r="60" fill="#2C3E50" stroke="#1A252F" stroke-width="2"/>
+  
+  <!-- GUI窗口主体 -->
+  <rect x="24" y="28" width="80" height="72" rx="4" ry="4" fill="#34495E" stroke="#2C3E50" stroke-width="1.5"/>
+  
+  <!-- 窗口标题栏 -->
+  <rect x="24" y="28" width="80" height="16" rx="4" ry="4" fill="#3498DB"/>
+  <rect x="24" y="36" width="80" height="8" fill="#3498DB"/>
+  
+  <!-- 窗口控制按钮 -->
+  <circle cx="32" cy="36" r="2" fill="#E74C3C"/>
+  <circle cx="38" cy="36" r="2" fill="#F39C12"/>
+  <circle cx="44" cy="36" r="2" fill="#2ECC71"/>
+  
+  <!-- GUI内容区域 - 网格布局 -->
+  <g id="grid">
+    <!-- 第一行 -->
+    <rect x="30" y="50" width="14" height="14" rx="2" ry="2" fill="#1ABC9C" stroke="#16A085" stroke-width="1"/>
+    <rect x="48" y="50" width="14" height="14" rx="2" ry="2" fill="#9B59B6" stroke="#8E44AD" stroke-width="1"/>
+    <rect x="66" y="50" width="14" height="14" rx="2" ry="2" fill="#E67E22" stroke="#D35400" stroke-width="1"/>
+    <rect x="84" y="50" width="14" height="14" rx="2" ry="2" fill="#1ABC9C" stroke="#16A085" stroke-width="1"/>
+    
+    <!-- 第二行 -->
+    <rect x="30" y="68" width="14" height="14" rx="2" ry="2" fill="#E74C3C" stroke="#C0392B" stroke-width="1"/>
+    <rect x="48" y="68" width="14" height="14" rx="2" ry="2" fill="#3498DB" stroke="#2980B9" stroke-width="1"/>
+    <rect x="66" y="68" width="14" height="14" rx="2" ry="2" fill="#F1C40F" stroke="#F39C12" stroke-width="1"/>
+    <rect x="84" y="68" width="14" height="14" rx="2" ry="2" fill="#2ECC71" stroke="#27AE60" stroke-width="1"/>
+    
+    <!-- 第三行 -->
+    <rect x="30" y="86" width="14" height="14" rx="2" ry="2" fill="#95A5A6" stroke="#7F8C8D" stroke-width="1"/>
+    <rect x="48" y="86" width="32" height="14" rx="2" ry="2" fill="#34495E" stroke="#2C3E50" stroke-width="1"/>
+    <rect x="84" y="86" width="14" height="14" rx="2" ry="2" fill="#E74C3C" stroke="#C0392B" stroke-width="1"/>
+  </g>
+  
+  <!-- 闪光效果 -->
+  <ellipse cx="45" cy="45" rx="15" ry="8" fill="white" opacity="0.15" transform="rotate(-30 45 45)"/>
+  
+  <!-- FastGUI 文字 -->
+  <text x="64" y="118" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ECF0F1" text-anchor="middle">FastGUI</text>
+</svg>

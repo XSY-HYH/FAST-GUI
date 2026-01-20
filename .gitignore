@@ -1,0 +1,57 @@
+# Gradle build outputs
+/build/
+.gradle/
+
+# IDEA files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# Java compiled files
+*.class
+
+# Plugin JAR files
+*.jar
+
+# Log files
+logs/
+*.log
+
+# Local configuration files
+config.yml
+*.local.yml
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build output directory
+build/libs/
+
+# Test output
+test-results/
+update/
+PPT/
+# Coverage report
+coverage/
+
+# Local IDE configuration
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/jarRepositories.xml
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml

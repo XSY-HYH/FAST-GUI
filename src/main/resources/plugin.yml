@@ -1,0 +1,45 @@
+name: FastGUI
+version: 6.9.8
+description: 快速创建基于原版箱子的自定义UI界面
+# 版本测试说明
+# 本插件已在1.21.x版本测试通过，支持所有1.21.x版本
+main: me.fastgui.FastGUI
+api-version: '1.21'
+author: XSY团队
+commands:
+  fg:
+    description: FastGUI主命令
+    usage: /<command> <add/list/open/delete> [参数]
+    aliases: [fastgui]
+  fgnbt:
+    description: FastGUI NBT管理命令
+    usage: /<command> <Border/Button> [参数]
+    aliases: []
+  fgBook:
+    description: FastGUI书与笔UI管理命令
+    usage: /<command> <register/open> [参数]
+    aliases: []
+  fglang:
+    description: FastGUI语言切换命令
+    usage: /<command> [语言文件名]
+    aliases: []
+  fgcd:
+    description: FastGUI命令执行辅助工具
+    usage: /<command> "世界名字" "命令" "执行体（玩家，控制台执行）"
+    aliases: []
+permissions:
+  fastgui.use:
+    description: 允许使用FastGUI的基本功能
+    default: op
+  fastgui.admin:
+    description: 允许管理FastGUI界面
+    default: op
+  fastgui.command.fgnbt:
+    description: 允许使用/fgnbt命令
+    default: op
+  fastgui.command.fglang:
+    description: 允许使用/fglang命令
+    default: op
+  fastgui.command.fgcd:
+    description: 允许使用/fgcd命令
+    default: op
